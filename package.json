@@ -1,7 +1,7 @@
 {
-  "name": "gsd-node-deploy",
+  "name": "intellij-test-debug",
   "version": "1.0.12",
-  "description": "This project is inteded to extend the gulp tasks and create the project structure to deploy a node.js application.",
+  "description": "",
   "license": "SEE LICENSE IN LICENSE.txt",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -10,10 +10,6 @@
     "prepublish": "npm run build",
     "build": "webpack --config ./webpack.config.js",
     "build-local": "webpack --config ./webpack.local.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://gsd-web-02/cwood/gsd-node-deploy.git"
   },
   "dependencies": {
     "@types/glob": "^5.0.35",

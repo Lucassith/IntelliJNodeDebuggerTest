@@ -1,7 +1,7 @@
 {
   "allowJs": true,
   "compilerOptions": {
-    "outDir": "./",
+    "outDir": "./lib",
     "target": "es2018",
     "module": "commonjs",
     "sourceMap": true,

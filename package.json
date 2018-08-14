@@ -1,0 +1,44 @@
+{
+  "name": "gsd-node-deploy",
+  "version": "1.0.12",
+  "description": "This project is inteded to extend the gulp tasks and create the project structure to deploy a node.js application.",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "npm run build",
+    "build": "webpack --config ./webpack.config.js",
+    "build-local": "webpack --config ./webpack.local.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gsd-web-02/cwood/gsd-node-deploy.git"
+  },
+  "dependencies": {
+    "@types/glob": "^5.0.35",
+    "glob": "^7.1.2",
+    "ncp": "^2.0.0",
+    "pkg": "^4.3.3",
+    "resourcehacker": "^4.2.51",
+    "rimraf": "^2.6.2",
+    "rtrim": "^1.0.0",
+    "signtool": "^1.0.0",
+    "zip-local": "^0.3.4"
+  },
+  "devDependencies": {
+    "@types/jszip": "^3.1.4",
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^8.4.0",
+    "@types/jest": "^23.1.6",
+    "path": "^0.12.7",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-deploy-after-build": "^1.0.5",
+    "webpack-node-externals":"^1.7.2",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.5.2"
+  }
+}
